@@ -1,0 +1,502 @@
+Error messages for the complete inverter unit
+1 Modbus TCP value out of range
+2 Configuration corrupt
+3 APU 1 / 2 cooling fluid low
+4 APU 3 / 4 cooling fluid low
+5 No enable signal
+6 No supply voltage
+7 Medium voltage switch gear off
+8 DI Temperature not OK
+9 DI medium voltage transformer error
+10 APU 1 / 2 water pump switching cycles
+11 APU 3 / 4 water pump switching cycles
+12 APU 5 / 6 water pump switching cycles
+13 APU 1 / 2 air-to-air cooler switching cycles
+14 APU 3 / 4 air-to-air cooler switching cycles
+15 APU 5 / 6 air-to-air cooler switching cycles
+16 APU 1 / 2 water air cooler switching cycles
+17 APU 3 / 4 water air cooler switching cycles
+18 APU 5 / 6 water air cooler switching cycles
+19 Supply voltage low
+20 Modbus TCP timeout
+21 APU 1 / 2 insulation
+22 APU 3 / 4 insulation
+23 APU 5 / 6 insulation
+24 Medium voltage transformer temperature high
+25 APU 5 / 6 cooling fluid low
+26 Error count overrun
+27 APU 1 / 2 insulation monitor failed
+28 APU 3 / 4 insulation monitor failed
+29 APU 5 / 6 insulation monitor failed
+30 APU 1 Powerlink
+31 APU 2 Powerlink
+32 APU 3 Powerlink
+33 APU 4 Powerlink
+34 APU 5 Powerlink
+35 APU 6 Powerlink
+36 APU 1 type mismatch
+37 APU 2 type mismatch
+38 APU 3 type mismatch
+39 APU 4 type mismatch
+40 APU 5 type mismatch
+41 APU 6 type mismatch
+42 APS unlicensed
+43 Internal configuration not valid
+44 APU Update
+45 APMC — Battery missing/empty
+46 APU1/2 Insulation Monitoring (pos. ground)
+47 APU3/4 Insulation Monitoring (pos. ground)
+48 APU1/2 Insulation Monitoring (neg. ground)
+49 APU3/4 Insulation Monitoring (neg. ground)
+50 APU1/2 extern Insulation Monitoring
+51 APU3/4 extern Insulation Monitoring
+
+
+
+Error messages for the inverter subunit
+1 Overtemperature IGBT L1
+2 Overtemperature IGBT L2
+3 Overtemperature IGBT L3
+4 Overtemperature inductance
+5 Overvoltage Vdc pos. SW
+6 Overvoltage Vdc neg. SW
+7 Overvoltage Vdc total SW
+8 Undervoltage Vdc pos. SW
+9 Undervoltage Vdc neg. SW
+10 Undervoltage Vdc total SW
+11 Overcurrent Idc SW
+12 Overcurrent Iac L1 SW
+13 Overcurrent Iac L2 SW
+14 Overcurrent Iac L3 SW
+16 Grid rotation Error
+17 Overfrequency level 1
+18 Overfrequency level 2
+19 Overfrequency level 3
+20 Underfrequency level 1
+21 Underfrequency level 2
+22 Overvoltage VL1 level 1
+23 Overvoltage VL1 level 2
+24 Overvoltage VL1 level 3
+25 Overvoltage VL2 level 1
+26 Overvoltage VL2 level 2
+27 Overvoltage VL2 level 3
+28 Overvoltage VL3 level 1
+29 Overvoltage VL3 level 2
+30 Overvoltage VL3 level 3
+31 Undervoltage VL1 level 1
+32 Undervoltage VL1 level 2
+33 Undervoltage VL2 level 1
+34 Undervoltage VL2 level 2
+35 Undervoltage VL3 level 1
+36 Undervoltage VL3 level 2
+37 Driver L1
+38 Driver L2
+39 Driver L3
+40 Overcurrent Idc HW
+41 Overcurrent Iac L1 HW
+42 Overcurrent Iac L2 HW
+43 Overcurrent Iac L3 HW
+44 Overtemperature IGBT HW
+46 Supply error
+47 Supply error delayed
+48 Overvoltage Vdc neg. HW
+49 Undervoltage Vdc neg. HW
+50 Overvoltage Vdc pos. HW
+51 Undervoltage Vdc pos. HW
+52 Overvoltage Vdc total HW
+53 Supply error 15V neg. SW
+54 Supply error 15V pos. sum. SW
+56 Supply error 24V driver pos. SW
+57 Supply error 24V neg. SW
+58 Supply error 24V pos. SW
+59 Supply error 5V pos. SW
+60 AC switch
+61 DC switch
+62 Enable 24V
+63 Driver version L1
+64 Driver version L2
+65 Driver version L3
+66 CPLD version
+67 HW control card
+68 Model control card
+69 AC pre-charge
+70 DC pre-charge
+71 Sector synchronization
+72 No sync. signal
+73 Wrong firmware version
+74 Wrong control mode
+75 Current sum error
+76 Driver L1
+77 Driver L2
+78 Driver L3
+79 Overcurrent Idc HW
+80 Overcurrent Iac L1 HW
+81 Overcurrent Iac L2 HW
+82 Overcurrent Iac L3 HW
+83 PWM error
+84 Overvoltage Vdc neg. HW
+85 Undervoltage Vdc neg. HW
+86 Overvoltage Vdc pos. HW
+87 Undervoltage Vdc pos. HW
+88 Overvoltage Vdc total HW
+89 Overtemperature IGBT HW
+90 Overcurrent Booster HW
+91 Driver Chopper
+92 Supply error
+93 Supply error delayed
+94 Driver Booster
+95 No driver detected
+96 Overvoltage VL1 level 4
+97 Overvoltage VL2 level 4
+98 Overvoltage VL3 level 4
+99 Overvoltage mean level 1
+100 Overtemperature Control Card SW
+101 Wrong version control card
+102 Voltage measurement Island grid.
+103 Unbalanced grid voltage
+104 Unbalanced phase angle
+105 Unbalanced grid current
+
+
+
+
+Remedying error messages
+Error messages for the inverter unit
+Error number 1 — Modbus TCP value out of range
+Possible causes The permissible range for data that has been transmited
+via the Modbus TCP interface is too small.
+Measures Check the permissible range for data that are transmitted
+via the Modbus TCP interface.
+
+
+Error number 2 — Configuration corrupt
+Possible causes Transmission of configuration data has failed,
+e.g. because of a defective USB flashdrive
+Measures Check the USB flashdrive.
+
+Error number 3 — APU 1 / 2 cooling fluid low
+Possible causes The filling level of the cooling liquid is too low.
+Measures • Check the filling level of the cooling liquid.
+If the filling level is the cooling liquid is too low, replenish
+the cooling liquid.
+• Open the doors in the cabinet +C3.
+• Check all pipes and hoses for leaks.
+If leaks are found, contact the manufacturer. You
+will find information on this in Chapter Technical
+support (page 355).
+
+Error number 4 — APU 3 / 4 cooling fluid low
+Possible causes The filling level of the cooling liquid is too low.
+Measures • Check the filling level of the cooling liquid.
+If the filling level is the cooling liquid is too low, replenish
+the cooling liquid.
+• Open the doors in the cabinet +C6.
+• Check all pipes and hoses for leaks.
+If leaks are found, contact the manufacturer. You
+will find information on this in Chapter Technical
+support (page 355).
+
+Error number 5 — No enable signal
+Possible causes The cabinet doors were open.
+Measures • Check whether the main switch is open. If the main
+switch is open, closed it.
+• Check whether all cabinet doors are closed. If the
+cabinet doors are open, close them.
+
+Error number 6 — No supply voltage
+Possible causes There is a connection fault.
+Measures Check the connections for the power supply.
+
+Error number 7 — Medium voltage switch gear off
+Possible causes The medium-voltage switchgear is switched off.
+Measures The medium-voltage switchgear is switched on.
+
+Error number 8 — DI Temperature not OK
+Possible causes The temperature in the cabinet is too high.
+Measures • Switch the radial ventilation on manually via the
+remote access connection.
+• Check whether the radial ventilation is switched on.
+
+Error number 9 — DI medium voltage transformer error
+Possible causes The medium-voltage transformer is faulty.
+Measures • Check the medium-voltage transformer for shortcircuits
+and internal faults.
+• Check the filling level of the insulation oil of the
+medium-voltage transformer.
+If the filling level is too low, contact the manufacturer.
+You will find information on this in Chapter
+Technical support (page 355).
+
+
+
+Error number 10 — APU 1 / 2 water pump switching cycles
+Possible causes The water pump switches on and off more than 60
+times per hour.
+Measures Check the control loop of the cooling system.
+
+Error number 11 — APU 3 / 4 water pump switching cycles
+Possible causes The water pump switches on and off more than 60
+times per hour.
+Measures Check the control loop of the cooling system.
+
+Error number 13 — APU 1 / 2 air-to-air cooler switching cycles
+Possible causes The air-to-air heat exchanger switches on and off more
+than 60 times per hour.
+Measures Check the control loop of the cooling system.
+Error number 14— APU 3 / 4 air-to-air cooler switching cycles
+Possible causes The air-to-air heat exchanger switches on and off more
+than 60 times per hour.
+Measures Check the control loop of the cooling system.
+Error number 16 — APU 1 / 2 water air cooler switching cycles
+Possible causes The water-to-air heat exchanger switches on and off
+more than 60 times per hour.
+Measures Check the control loop of the cooling system.
+Error number 17 — APU 3 / 4 water air cooler switching cycles
+Possible causes The water-to-air heat exchanger switches on and off
+more than 60 times per hour.
+Measures Check the control loop of the cooling system.
+
+
+
+
+
+Error number 19 — Supply voltage low
+Possible causes The grid voltage is too low.
+Measures Check the grid voltage at terminal -TB1 in cabinet +C1.
+Error number 20 — Modbus TCP timeout
+Possible causes The Modbus TCP timeout is shorter than the time since
+the last network query.
+Measures • Check whether the Modbus TCP interface is functional.
+• Check whether the Modbus TCP timeout is correctly
+set.
+Error number 21 — APU 1 / 2 insulation
+Possible causes • The insulation monitor mode is set to 0.
+• The insulation monitor is faulty.
+Measures • Check whether the insulation monitoring mode is
+correctly set.
+• Check the insulation monitor.
+
+
+Error number 22 — APU 3 / 4 insulation
+Possible causes • The insulation monitor mode is set to 0.
+• The insulation monitor is faulty.
+Measures • Check whether the insulation monitoring mode is
+correctly set.
+• Check the insulation monitor.
+Error number 23 — APU 5 / 6 insulation
+Possible causes • The insulation monitor mode is set to 0.
+• The insulation monitor is faulty.
+Measures • Check whether the insulation monitoring mode is
+correctly set.
+• Check the insulation monitor.
+Error number 24— Medium voltage transformer temperature high
+Possible causes The temperature of the medium-voltage transformer is
+higher than permitted.
+Measures • Check whether the medium-voltage transformer is
+correctly connected.
+• Check the temperature of the insulation oil of the
+medium-voltage transformer.
+
+Error number 25 — APU 5 / 6 cooling fluid low
+Possible causes The filling level of the cooling liquid is too low.
+Measures • Check the filling level of the cooling liquid.
+If the filling level is the cooling liquid is too low, replenish
+the cooling liquid.
+• Open the doors of cabinets +C3 and +C6.
+• Check all pipes and hoses for leaks.
+If leaks are found, contact the manufacturer. You
+will find information on this in Chapter Technical
+support (page 355).
+
+Error number 26 — Error count overrun
+Possible causes The number of error messages that occur within one
+hour has exceeded the threshold.
+Measures Check all faults and remedy them.
+
+
+Error number 27 — APU 1 / 2 insulation monitor failed
+Possible causes • The insulation monitor has an internal fault.
+• The software version if obsolete.
+Measures • Check the operating state that the insulation monitor
+is in.
+• Check the error messages that are output for the
+insulation monitor.
+• Perform a software update of the APUs.
+Error number 28 — APU 3 / 4 insulation monitor failed
+Possible causes • The insulation monitor has an internal fault.
+• The software version if obsolete.
+Measures • Check the operating state that the insulation monitor
+is in.
+• Check the error messages that are output for the
+insulation monitor.
+• Perform a software update of the APUs.
+Error number 29 — APU 5 / 6 insulation monitor failed
+Possible causes • The insulation monitor has an internal fault.
+• The software version if obsolete.
+Measures • Check the operating state that the insulation monitor
+is in.
+• Check the error messages that are output for the
+insulation monitor.
+
+
+
+
+
+
+Error number 30— APU 1 Powerlink
+Possible causes The Powerlink interface signals more than
+5 communication errors in one hour.
+Measures • Check the connection to the apparent power master
+controller.
+• Check the connection to the Ethernet switch.
+• Check the connection to the control unit. You will
+find information on this in Section Control unit –
+interior view in Chapter Design (page 32).
+Error number 31— APU 2 Powerlink
+Possible causes The Powerlink interface signals more than
+5 communication errors in one hour.
+Measures • Check the connection to the apparent power master
+controller.
+• Check the connection to the Ethernet switch.
+• Check the connection to the control unit. You will
+find information on this in Section Control unit –
+interior view in Chapter Design (page 32).
+
+
+Error number 32 — APU 3 Powerlink
+Possible causes The Powerlink interface signals more than
+5 communication errors in one hour.
+Measures • Check the connection to the apparent power master
+controller.
+• Check the connection to the Ethernet switch.
+• Check the connection to the control unit. You will
+find information on this in Section Control unit –
+interior view in Chapter Design (page 32).
+Error number 33 — APU 4 Powerlink
+Possible causes The Powerlink interface signals more than
+5 communication errors in one hour.
+Measures • Check the connection to the apparent power master
+controller.
+• Check the connection to the Ethernet switch.
+• Check the connection to the control unit. You will
+find information on this in Section Control unit –
+interior view in Chapter Design (page 32).
+Error number 34 — APU 5 Powerlink
+Possible causes The Powerlink interface signals more than
+5 communication errors in one hour.
+Measures • Check the connection to the apparent power master
+controller.
+• Check the connection to the Ethernet switch.
+• Check the connection to the control unit. You will
+find information on this in Section Control unit –
+interior view in Chapter Design (page 32).
+
+Error number 35 — APU 6 Powerlink
+Possible causes The Powerlink interface signals more than
+5 communication errors in one hour.
+Measures • Check the connection to the apparent power master
+controller.
+• Check the connection to the Ethernet switch.
+• Check the connection to the control unit. You will
+find information on this in Section Control unit –
+interior view in Chapter Design (page 32).
+
+
+
+Error number 36— APU 1 type mismatch
+Possible causes An incorrect control module type has been installed.
+Measures • Note down the serial number of the control module.
+• Contact the manufacturer. You will find information
+on this in Chapter Technical support (page 355).
+
+
+Error number 37— APU 2 type mismatch
+Possible causes An incorrect control module type has been installed.
+Measures • Note down the serial number of the control module.
+• Contact the manufacturer. You will find information
+on this in Chapter Technical support (page 355).
+Error number 38— APU 3 type mismatch
+Possible causes An incorrect control module type has been installed.
+Measures • Note down the serial number of the control module.
+• Contact the manufacturer. You will find information
+on this in Chapter Technical support (page 355).
+Error number 39— APU 4 type mismatch
+Possible causes An incorrect control module type has been installed.
+Measures • Note down the serial number of the control module.
+• Contact the manufacturer. You will find information
+on this in Chapter Technical support (page 355).
+
+Error number 40— APU 5 type mismatch
+Possible causes An incorrect control module type has been installed.
+Measures • Note down the serial number of the control module.
+• Contact the manufacturer. You will find information
+on this in Chapter Technical support (page 355).
+Error number 41 — APU 6 type mismatch
+Possible causes An incorrect control module type has been installed.
+Measures • Note down the serial number of the control module.
+• Contact the manufacturer. You will find information
+on this in Chapter Technical support (page 355).
+Error number 42 — APS unlicensed
+Possible causes Inverter not licensed.
+Measures • Add a licence to the software of the inverter.
+Error number 43 — Internal configuration not valid
+Possible causes Configuration not correct.
+Measures Reparameterize the inverter.
+
+
+Error number 44 — APU Update
+Possible causes The APU is in update mode.
+Measures Perform a software update of the APU.
+Error number 45 — APMC — Battery missing/empty
+Possible causes The battery of the apparent power master controller is
+missing or discharged.
+Measures • Open the miniature disconnector in the
+cabinet +C1.
+• Replace the battery.
+Error number 46 — APU1/2 Insulation Monitoring (pos. ground)
+Possible causes Positive ground feedback is faulty.
+Measures • Check the position of the circuit breaker (-Q116).
+If the circuit breaker is in position TRIPPED, switch
+it to position I.
+Error number 47 — APU3/4 Insulation Monitoring (neg. ground)
+Possible causes Positive ground feedback is faulty.
+Measures • Check the position of the circuit breaker (-Q216).
+If the circuit breaker is in position TRIPPED, switch
+it to position I.
+Error number 48 — APU1/2 Insulation Monitoring (pos. ground)
+Possible causes Positive ground feedback is faulty.
+Measures • Check the position of the circuit breaker (-Q116).
+If the circuit breaker is in position TRIPPED, switch
+it to position I.
+
+Error number 49 — APU3/4 Insulation Monitoring (neg. ground)
+Possible causes Positive ground feedback is faulty.
+Measures • Check the position of the circuit breaker (-Q216).
+If the circuit breaker is in position TRIPPED, switch
+it to position I.
+
+Error number 50 — APU1/2 extern Insulation Monitoring
+Possible causes Monitor feedback vom external IMD device is faulty.
+Measures • Check if a HIGH-pulse (DC +24 V) is applied at
+(-KF3) port 23 (DI07) .
+If DC 0 V is applied, apply a HIGH-pulse
+(DC +24 V).
+
+Error number 51— APU3/4 extern Insulation Monitoring
+Possible causes Monitor feedback vom external IMD device is faulty.
+Measures • Check if a HIGH-pulse (DC +24 V) is applied at
+(-KF3) port 24 (DI08).
+If DC 0 V is applied, apply a HIGH-pulse (DC 24 V).
+
+
+
+
+
+
+
+
+
+
+
+
+
